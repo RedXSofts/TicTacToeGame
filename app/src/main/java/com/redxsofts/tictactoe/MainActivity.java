@@ -1,6 +1,7 @@
 package com.redxsofts.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -22,7 +23,23 @@ public class MainActivity extends AppCompatActivity {
         high_score=findViewById(R.id.high_score);
 
 
+        //start Code
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),gameMode.class);
+                startActivity(intent);
+            }
+        });
 
+        //high score code
+        high_score.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), highScore.class);
+                startActivity(intent);
+            }
+        });
 
         //exit button
         exit.setOnClickListener(new View.OnClickListener() {
