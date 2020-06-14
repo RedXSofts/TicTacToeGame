@@ -8,7 +8,7 @@
     tools:context=".multiplayerdetails">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/startGameM"
         android:layout_width="207dp"
         android:layout_height="45dp"
         android:background="@android:color/transparent"
