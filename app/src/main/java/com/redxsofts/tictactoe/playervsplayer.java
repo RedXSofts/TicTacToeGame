@@ -20,7 +20,6 @@ public class playervsplayer extends AppCompatActivity {
         int postion=Integer.parseInt(chess.getTag().toString());
 
 
-
         if(boardState[postion]==2 && isContinue) {
             chess.setTranslationY(-1000f);
             boardState[postion]=player;
